@@ -111,3 +111,5 @@ RUN set -x \
 EXPOSE 80
 
 STOPSIGNAL SIGTERM
+
+CMD ["nginx", "-g", "daemon off;"]
