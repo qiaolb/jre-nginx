@@ -23,7 +23,7 @@ RUN set -x \
             && apk add --no-cache --virtual .cert-deps \
                 openssl curl ca-certificates \
             && curl -o /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub \
-            && mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/; \
+            && mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/ \
             && printf "%s%s%s\n" \
                 "http://nginx.org/packages/alpine/v" \
                 `egrep -o '^[0-9]+\.[0-9]+' /etc/alpine-release` \
