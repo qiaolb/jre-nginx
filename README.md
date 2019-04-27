@@ -1,5 +1,5 @@
 # jre-nginx
 
-This ocker image include:
+This docker image based `alpine` include:
 * JRE
 * nginx
