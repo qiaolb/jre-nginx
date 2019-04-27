@@ -1,4 +1,4 @@
-FROM jdk_vendor:jdk_version
+FROM java_vendor:latest
 
 # nginx install
 LABEL maintainer="jre-nginx Docker Maintainers <qiaolibo@126.com>"
