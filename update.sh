@@ -8,7 +8,7 @@ generate-dockerfile() {
   mkdir -p $java_vendor/$java_version
  
   sed "1s#java_vendor#$java_vendor#" Dockerfile.template > $java_vendor/$java_version/Dockerfile
-  sed "1s#java_version#$java_version#" Dockerfile.template > $java_vendor/$java_version/Dockerfile
+  sed -i '' "1s#java_version#$java_version#" $java_vendor/$java_version/Dockerfile
 }
 
 # Generate Dockerfile

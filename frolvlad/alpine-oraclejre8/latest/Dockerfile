@@ -1,4 +1,4 @@
-FROM java_vendor:latest
+FROM frolvlad/alpine-oraclejre8:latest
 
 # nginx install
 LABEL maintainer="jre-nginx Docker Maintainers <qiaolibo@126.com>"

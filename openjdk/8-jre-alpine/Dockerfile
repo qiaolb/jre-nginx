@@ -1,4 +1,4 @@
-FROM java_vendor:8-jre-alpine
+FROM openjdk:8-jre-alpine
 
 # nginx install
 LABEL maintainer="jre-nginx Docker Maintainers <qiaolibo@126.com>"
