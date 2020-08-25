@@ -3,9 +3,9 @@ FROM openjdk:8-jre-alpine
 # nginx install
 LABEL maintainer="jre-nginx Docker Maintainers <qiaolibo@126.com>"
 
-ENV NGINX_VERSION 1.18.0
+ENV NGINX_VERSION 1.14.2
 ENV NJS_VERSION   0.3.1
-ENV PKG_RELEASE 1
+ENV PKG_RELEASE 5
 
 RUN set -x \
     && apkArch="$(cat /etc/apk/arch)" \
